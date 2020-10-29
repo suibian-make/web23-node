@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4>修改用户</h4>
+        <form action="/toedituser?id=<%=editData._id%>" method="post">
+            <div class="form-group">
+                <label>用户名</label>
+                <input type="text" value="<%=editData.username%>" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>年龄</label>
+                <input type="text" value="<%=editData.age%>" name="age" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>性别</label>
+                <input type="text" value="<%=editData.sex%>" name="sex" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>地址</label>
+                <input type="text" value="<%=editData.address%>" name="address" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>手机号</label>
+                <input type="text" value="<%=editData.phone%>" name="phone" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>邮箱</label>
+                <input type="text" value="<%=editData.email%>" name="email" class="form-control">
+            </div>
+            <div>
+                <button class="btn btn-primary btn-block">确定修改</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
